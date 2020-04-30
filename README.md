@@ -1,2 +1,4 @@
-# static_website
-# str-statt
+# Uruchomienie
+
+# yarn start
+yarn

@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+/* Menu */
+
+.nav{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    background-color: #333333;
+}
+
+.nav .nav_items{
+    display: flex;
+    justify-content: left;
+}
+
+.nav-logo {
+    height: 60px;
+    width: 60px;
+    float: left;
+    padding: 10px 10px;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+  
+.nav_items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li .nav_item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0px;
+    width: 100px;
+}
+  
+li .nav_item:hover {
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+}
+
+li .activate{
+    background-color: green;
+}
+
+label{
+    display: none;
+}
+
+.icon{
+    display: none;
+}
+
+/*--------------------*/
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 0;
+}
+.container, h1{
+    margin-top: 0;
+}
+.pokemons-container{
+    display: inline-block;
+}
+.pokemons-img{
+    width: 250px;
+    height: 250px;
+}
+
+.poke_name{
+    text-align: center;
+    font-size: 42px;
+}
+
+.poke_details{
+    padding: 50px 0 0 150px;
+    text-align: left;
+    font-size: 20px;
+}
+
+td{
+    padding: 0 0 0 50px;
+}
+
+.poke-img{
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    float: left;
+}
+.nav_pvp{
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.nav_pvp .nav-items-pvp {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-item-pvp{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+}
+
+.nav-item-pvp:hover {
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+}
+
+/*SMARTFON*/
+@media screen and (max-width: 599px) {
+
+    /*NAVBAR*/
+
+    .nav .nav-logo{
+        float: left;
+    }
+    .nav label{
+        display: inline;
+        cursor: pointer;
+    }
+    .nav .nav_items{
+        background-color: #333333;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    li .nav_item {
+        width: 100%;
+    }
+    li .nav_item:hover {
+        background-color: green;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+    }
+    li .activate{
+        background-color: green;
+        width: 100%;
+    }
+    .pokemons-container{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        display: flex;  
+    }
+    
+    .container{
+        padding-top: 330px;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+
+    .poke_name{
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .poke-img{
+        width: 250px;
+        height: 250px;
+        float: initial;
+        display: block;
+        margin: 0 auto; 
+    }
+    .poke_tab{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
