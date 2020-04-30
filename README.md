@@ -1,4 +1,5 @@
 # Uruchomienie
 
+# yarn
+
 # yarn start
-yarn
